@@ -1,0 +1,369 @@
+================================================================================
+WELCOME TO E-COMMERCE SEARCH PLATFORM DEMO
+================================================================================
+This interactive demo showcases search algorithms used in e-commerce platforms.
+Compare Linear Search vs Binary Search performance with real-time analysis!
+
+Current Dataset: Sample Products (15 products)
+--------------------------------------------------------------------------------
+
+MAIN MENU:
+1. Demonstrate Linear Search (Product ID)
+2. Demonstrate Binary Search (Product ID)
+3. Compare Search Performance
+4. Search by Product Name
+5. Search by Category
+6. Performance Testing Menu
+7. Display Current Dataset
+9. Run Comprehensive Tests
+0. Exit
+
+Enter your choice: 1
+
+============================================================
+LINEAR SEARCH DEMONSTRATION
+============================================================
+Enter Product ID to search: 101
+
+Performing Linear Search...
+
+SEARCH RESULTS:
+Algorithm: Linear Search
+Execution Time: 29.10 microseconds
+Comparisons Made: 15
+Product not found in the dataset.
+
+THEORETICAL ANALYSIS:
+Time Complexity: O(n) - Linear time
+Space Complexity: O(1) - Constant space
+Best Case: O(1) - Element at first position
+Average Case: O(n/2) - Element in middle
+Worst Case: O(n) - Element at last position or not found
+
+Press Enter to continue...
+
+
+MAIN MENU:
+1. Demonstrate Linear Search (Product ID)
+2. Demonstrate Binary Search (Product ID)
+3. Compare Search Performance
+4. Search by Product Name
+5. Search by Category
+6. Performance Testing Menu
+7. Display Current Dataset
+8. Change Dataset
+9. Run Comprehensive Tests
+0. Exit
+
+Enter your choice: 2
+
+============================================================
+BINARY SEARCH DEMONSTRATION
+============================================================
+Enter Product ID to search: 401
+
+Performing Binary Search...
+
+SEARCH RESULTS:
+Algorithm: Binary Search
+Execution Time: 22.40 microseconds
+Comparisons Made: 4
+Product not found in the dataset.
+
+THEORETICAL ANALYSIS:
+Time Complexity: O(log n) - Logarithmic time
+Space Complexity: O(1) - Constant space (iterative)
+Best Case: O(1) - Element at middle position
+Average Case: O(log n) - Divides search space in half
+Worst Case: O(log n) - Element at leaf position or not found
+Prerequisite: Array must be sorted by Product ID
+
+Press Enter to continue...
+
+
+MAIN MENU:
+1. Demonstrate Linear Search (Product ID)
+2. Demonstrate Binary Search (Product ID)
+3. Compare Search Performance
+4. Search by Product Name
+5. Search by Category
+6. Performance Testing Menu
+7. Display Current Dataset
+8. Change Dataset
+9. Run Comprehensive Tests
+0. Exit
+
+Enter your choice: 3
+
+======================================================================
+SEARCH PERFORMANCE COMPARISON
+======================================================================
+Enter Product ID to search: 1001
+
+============================================================
+SEARCH PERFORMANCE COMPARISON
+============================================================
+Dataset size: 15 products
+Target Product ID: 1001
+------------------------------------------------------------
+LINEAR SEARCH:
+  Result: Found
+  Product: iPhone 15 Pro
+  Time: 8100 nanoseconds
+  Comparisons: 1
+  Time Complexity: O(n)
+
+BINARY SEARCH:
+  Result: Found
+  Product: iPhone 15 Pro
+  Time: 4000 nanoseconds
+  Comparisons: 4
+  Time Complexity: O(log n)
+
+PERFORMANCE ANALYSIS:
+  Efficiency Gain: 0.3x fewer comparisons with binary search
+  Speed Improvement: 2.0x faster
+
+THEORETICAL ANALYSIS:
+  Linear Search Average: ~7 comparisons
+  Binary Search Worst: ~4 comparisons
+  Theoretical Efficiency: 1.8x
+
+Press Enter to continue...
+
+
+MAIN MENU:
+1. Demonstrate Linear Search (Product ID)
+2. Demonstrate Binary Search (Product ID)
+3. Compare Search Performance
+4. Search by Product Name
+5. Search by Category
+6. Performance Testing Menu
+7. Display Current Dataset
+8. Change Dataset
+9. Run Comprehensive Tests
+0. Exit
+
+Enter your choice: 7
+
+============================================================
+CURRENT DATASET: Sample Products
+============================================================
+
+DATASET INFORMATION:
+Total Products: 15
+Price Range: $249.99 - $3899.99
+Average Price: $1021.99
+Categories: 8
+Category List: Smartphones, Laptops, Tablets, Audio, Gaming, Photography, Wearables, Electronics       
+Product ID Range: 1001 - 1015
+
+PRODUCT LIST:
+------------------------------------------------------------
+1. Product[ID=1001, Name='iPhone 15 Pro', Category='Smartphones', Price=$999.99]
+2. Product[ID=1002, Name='Samsung Galaxy S24', Category='Smartphones', Price=$899.99]
+3. Product[ID=1003, Name='MacBook Pro 14', Category='Laptops', Price=$1999.99]
+4. Product[ID=1004, Name='Dell XPS 13', Category='Laptops', Price=$1299.99]
+5. Product[ID=1005, Name='iPad Air', Category='Tablets', Price=$599.99]
+6. Product[ID=1006, Name='AirPods Pro', Category='Audio', Price=$249.99]
+7. Product[ID=1007, Name='Sony WH-1000XM5', Category='Audio', Price=$399.99]
+8. Product[ID=1008, Name='Nintendo Switch', Category='Gaming', Price=$299.99]
+9. Product[ID=1009, Name='PlayStation 5', Category='Gaming', Price=$499.99]
+10. Product[ID=1010, Name='Canon EOS R5', Category='Photography', Price=$3899.99]
+... and 5 more products
+
+Tip: Use search functions to find specific products!
+
+Press Enter to continue...
+
+
+MAIN MENU:
+1. Demonstrate Linear Search (Product ID)
+2. Demonstrate Binary Search (Product ID)
+3. Compare Search Performance
+4. Search by Product Name
+5. Search by Category
+6. Performance Testing Menu
+7. Display Current Dataset
+8. Change Dataset
+9. Run Comprehensive Tests
+0. Exit
+
+Enter your choice: 9
+
+======================================================================
+COMPREHENSIVE ALGORITHM TESTING
+======================================================================
+This will run a series of tests to demonstrate algorithm behavior...
+
+Test 1: Performance comparison with current dataset
+--------------------------------------------------
+
+============================================================
+SEARCH PERFORMANCE COMPARISON
+============================================================
+Dataset size: 15 products
+Target Product ID: 1008
+------------------------------------------------------------
+LINEAR SEARCH:
+  Result: Found
+  Product: Nintendo Switch
+  Time: 4500 nanoseconds
+  Comparisons: 8
+  Time Complexity: O(n)
+
+BINARY SEARCH:
+  Result: Found
+  Product: Nintendo Switch
+  Time: 1700 nanoseconds
+  Comparisons: 1
+  Time Complexity: O(log n)
+
+PERFORMANCE ANALYSIS:
+  Efficiency Gain: 8.0x fewer comparisons with binary search
+  Speed Improvement: 2.6x faster
+
+THEORETICAL ANALYSIS:
+  Linear Search Average: ~7 comparisons
+  Binary Search Worst: ~4 comparisons
+  Theoretical Efficiency: 1.8x
+
+Test 2: Performance with different dataset sizes
+--------------------------------------------------
+Size 10: Linear(6 ops, 1.5μs) vs Binary(3 ops, 1.8μs)
+Size 50: Linear(26 ops, 2.0μs) vs Binary(5 ops, 1.7μs)
+Size 100: Linear(51 ops, 4.2μs) vs Binary(6 ops, 1.5μs)
+Size 500: Linear(251 ops, 12.5μs) vs Binary(8 ops, 1.3μs)
+
+Test 3: Time complexity analysis
+--------------------------------------------------
+
+================================================================================
+                    ASYMPTOTIC NOTATION & TIME COMPLEXITY ANALYSIS
+================================================================================
+
+BIG O NOTATION EXPLANATION:
+Big O notation describes the upper bound of an algorithm's time complexity.
+It represents the worst-case scenario for how the algorithm performs as the
+input size (n) grows to infinity.
+
+COMMON TIME COMPLEXITIES (from best to worst):
+  O(1)      - Constant time (best)
+  O(log n)  - Logarithmic time (excellent)
+  O(n)      - Linear time (good)
+  O(n log n)- Linearithmic time (fair)
+  O(n²)     - Quadratic time (poor)
+  O(2ⁿ)     - Exponential time (terrible)
+
+SEARCH ALGORITHM ANALYSIS:
+
+1. LINEAR SEARCH - O(n)
+   ┌─────────────────┬──────────────────────────────────────┐
+   │ Best Case       │ O(1) - Element at first position     │
+   │ Average Case    │ O(n/2) - Element in middle          │
+   │ Worst Case      │ O(n) - Element at end or not found  │
+   └─────────────────┴──────────────────────────────────────┘
+   Advantages: Works on unsorted data, simple implementation
+   Disadvantages: Slow for large datasets
+
+2. BINARY SEARCH - O(log n)
+   ┌─────────────────┬──────────────────────────────────────┐
+   │ Best Case       │ O(1) - Element at middle position    │
+   │ Average Case    │ O(log n) - Divide and conquer       │
+   │ Worst Case      │ O(log n) - Maximum divisions needed │
+   └─────────────────┴──────────────────────────────────────┘
+   Advantages: Very fast for large datasets
+   Disadvantages: Requires sorted data
+
+PERFORMANCE COMPARISON FOR DIFFERENT DATASET SIZES:
+   ┌──────────────┬─────────────────┬─────────────────┐
+   │ Dataset Size │ Linear Search   │ Binary Search   │
+   │              │ (comparisons)   │ (comparisons)   │
+   ├──────────────┼─────────────────┼─────────────────┤
+   │ 100          │ ~50             │ ~7              │
+   │ 1,000        │ ~500            │ ~10             │
+   │ 10,000       │ ~5,000          │ ~13             │
+   │ 100,000      │ ~50,000         │ ~17             │
+   │ 1,000,000    │ ~500,000        │ ~20             │
+   └──────────────┴─────────────────┴─────────────────┘
+
+RECOMMENDATION FOR E-COMMERCE PLATFORM:
+   For Product ID searches: Use BINARY SEARCH (requires sorted data)
+   For Name/Category searches: Use LINEAR SEARCH (data may not be sorted)
+   For hybrid approach: Use indexing/hash tables for O(1) average case
+
+Comprehensive testing completed!
+
+Press Enter to continue...
+
+
+MAIN MENU:
+1. Demonstrate Linear Search (Product ID)
+2. Demonstrate Binary Search (Product ID)
+3. Compare Search Performance
+4. Search by Product Name
+5. Search by Category
+6. Performance Testing Menu
+7. Display Current Dataset
+8. Change Dataset
+9. Run Comprehensive Tests
+0. Exit
+
+Enter your choice: 1
+
+============================================================
+LINEAR SEARCH DEMONSTRATION
+============================================================
+Enter Product ID to search: 1004
+
+Performing Linear Search...
+
+SEARCH RESULTS:
+Algorithm: Linear Search
+Execution Time: 6.30 microseconds
+Comparisons Made: 4
+Product Found:
+=== PRODUCT DETAILS ===
+Product ID: 1004
+Name: Dell XPS 13
+Category: Laptops
+Price: $1299.99
+Description: Ultrabook with InfinityEdge display
+Stock: 20 units
+Rating: 4.6/5.0
+Status: In Stock
+
+THEORETICAL ANALYSIS:
+Time Complexity: O(n) - Linear time
+Space Complexity: O(1) - Constant space
+Best Case: O(1) - Element at first position
+Average Case: O(n/2) - Element in middle
+Worst Case: O(n) - Element at last position or not found
+
+Press Enter to continue...
+
+
+MAIN MENU:
+1. Demonstrate Linear Search (Product ID)
+2. Demonstrate Binary Search (Product ID)
+3. Compare Search Performance
+4. Search by Product Name
+5. Search by Category
+6. Performance Testing Menu
+7. Display Current Dataset
+8. Change Dataset
+9. Run Comprehensive Tests
+0. Exit
+
+Enter your choice: 0
+
+============================================================
+THANK YOU FOR USING E-COMMERCE SEARCH DEMO!
+============================================================
+Key Takeaways:
+Linear Search: O(n) - Simple but slower for large datasets
+Binary Search: O(log n) - Fast but requires sorted data
+Choose the right algorithm based on your use case!
+
+Happy Learning!
+============================================================ 

@@ -1,0 +1,195 @@
+PS C:\Users\Ranjith\Desktop\CognizantHandson\Week-1\Design Patterns and Principles\FactoryMethodPatternExample> java -cp bin com.example.factory.FactoryMethodTest
+=== Factory Method Pattern Test for Document Management System ===
+
+Test 1: Basic Factory Method Usage
+----------------------------------
+Creating documents using factory methods:
+WordDocumentFactory: Creating Word document...
+WordDocument created: Untitled.docx
+PdfDocumentFactory: Creating PDF document...
+PdfDocument created: Untitled.pdf
+ExcelDocumentFactory: Creating Excel document...
+ExcelDocument created: Untitled.xlsx
+
+Testing basic document operations:
+Opening Word document: Untitled.docx
+Microsoft Word interface loaded...
+Saving Word document: Untitled.docx
+Document saved in .docx format
+Closing Word document: Untitled.docx
+Microsoft Word interface closed
+Printing PDF document: Untitled.pdf
+Content: Formatted document with fixed layout, images, and fonts
+Status: Closed
+Security: No Protection
+Printing Excel document: Untitled.xlsx
+Content: Spreadsheet with 1 worksheet(s), formulas, and charts
+Status: Closed
+
+======================================================================
+
+Test 2: Factory Methods with Filenames
+---------------------------------------
+WordDocumentFactory: Creating Word document with filename: Business_Contract
+WordDocument created: Business_Contract.docx
+PdfDocumentFactory: Creating PDF document with filename: User_Manual
+PdfDocument created: User_Manual.pdf
+ExcelDocumentFactory: Creating Excel document with filename: Annual_Budget
+ExcelDocument created: Annual_Budget.xlsx
+
+Document types created:
+- Microsoft Word Document (.docx)
+- Portable Document Format (.pdf)
+- Microsoft Excel Spreadsheet (.xlsx)
+
+======================================================================
+
+Test 3: Template Method Usage
+-----------------------------
+Using template method to create and open documents:
+
+Using Word Document Factory:
+=== Document Creation Process Started ===
+WordDocumentFactory: Creating Word document with filename: Template_Test_File
+WordDocument created: Template_Test_File.docx
+Document type: Microsoft Word Document (.docx)
+Opening Word document: Template_Test_File.docx
+Microsoft Word interface loaded...
+=== Document Creation Process Completed ===
+Closing Word document: Template_Test_File.docx
+Microsoft Word interface closed
+
+Using PDF Document Factory:
+=== Document Creation Process Started ===
+PdfDocumentFactory: Creating PDF document with filename: Template_Test_File
+PdfDocument created: Template_Test_File.pdf
+Document type: Portable Document Format (.pdf)
+Opening PDF document: Template_Test_File.pdf
+Adobe PDF Reader interface loaded...
+=== Document Creation Process Completed ===
+Closing PDF document: Template_Test_File.pdf
+Adobe PDF Reader interface closed
+
+Using Excel Document Factory:
+=== Document Creation Process Started ===
+ExcelDocumentFactory: Creating Excel document with filename: Template_Test_File
+ExcelDocument created: Template_Test_File.xlsx
+Document type: Microsoft Excel Spreadsheet (.xlsx)
+Opening Excel document: Template_Test_File.xlsx
+Microsoft Excel interface loaded...
+Loading 1 worksheet(s)...
+=== Document Creation Process Completed ===
+Closing Excel document: Template_Test_File.xlsx
+Microsoft Excel interface closed
+
+======================================================================
+
+Test 4: Specific Factory Features
+---------------------------------
+Testing Word-specific features:
+WordDocumentFactory: Creating Word document with template 'resume'
+WordDocument created: MyResume.docx
+Opening Word document: MyResume.docx
+Microsoft Word interface loaded...
+Applied professional resume template
+Running spell check on Word document: MyResume.docx
+Spell check completed - No errors found
+Closing Word document: MyResume.docx
+Microsoft Word interface closed
+
+Testing PDF-specific features:
+PdfDocumentFactory: Creating secure PDF document
+PdfDocument created: Confidential_Report.pdf
+Password protection enabled for PDF: Confidential_Report.pdf
+Opening PDF document: Confidential_Report.pdf
+Adobe PDF Reader interface loaded...
+Password protection detected - Please enter password
+PdfDocumentFactory: Creating digitally signed PDF document
+PdfDocument created: Legal_Document.pdf
+Opening PDF document: Legal_Document.pdf
+Adobe PDF Reader interface loaded...
+Adding digital signature to PDF: Legal_Document.pdf
+Digital signature applied successfully
+Closing PDF document: Confidential_Report.pdf
+Adobe PDF Reader interface closed
+Closing PDF document: Legal_Document.pdf
+Adobe PDF Reader interface closed
+
+Testing Excel-specific features:
+ExcelDocumentFactory: Creating Excel workbook with multiple sheets
+ExcelDocument created: Company_Data.xlsx
+Opening Excel document: Company_Data.xlsx
+Microsoft Excel interface loaded...
+Loading 1 worksheet(s)...
+Added new worksheet 'Sales' to Excel document: Company_Data.xlsx
+Total worksheets: 2
+Added new worksheet 'Marketing' to Excel document: Company_Data.xlsx
+Total worksheets: 3
+Added new worksheet 'Finance' to Excel document: Company_Data.xlsx
+Total worksheets: 4
+ExcelDocumentFactory: Creating Excel document with chart
+ExcelDocument created: Sales_Analysis.xlsx
+Opening Excel document: Sales_Analysis.xlsx
+Microsoft Excel interface loaded...
+Loading 1 worksheet(s)...
+Creating Bar Chart chart in Excel document: Sales_Analysis.xlsx
+Chart created successfully
+Closing Excel document: Company_Data.xlsx
+Microsoft Excel interface closed
+Closing Excel document: Sales_Analysis.xlsx
+Microsoft Excel interface closed
+
+======================================================================
+
+Test 5: Polymorphic Behavior
+----------------------------
+Creating different document types polymorphically:
+
+Factory Type: Word Document Factory
+WordDocumentFactory: Creating Word document with filename: Report
+WordDocument created: Report.docx
+Opening Word document: Report.docx
+Microsoft Word interface loaded...
+Printing Word document: Report.docx
+Content: Rich text document with formatting, images, and tables
+Status: Open
+Saving Word document: Report.docx
+Document saved in .docx format
+Closing Word document: Report.docx
+Microsoft Word interface closed
+
+Factory Type: PDF Document Factory
+PdfDocumentFactory: Creating PDF document with filename: Manual
+PdfDocument created: Manual.pdf
+Opening PDF document: Manual.pdf
+Adobe PDF Reader interface loaded...
+Printing PDF document: Manual.pdf
+Content: Formatted document with fixed layout, images, and fonts
+Status: Open
+Security: No Protection
+Saving PDF document: Manual.pdf
+Document saved in .pdf format
+PDF optimization applied
+Closing PDF document: Manual.pdf
+Adobe PDF Reader interface closed
+
+Factory Type: Excel Document Factory
+ExcelDocumentFactory: Creating Excel document with filename: Spreadsheet
+ExcelDocument created: Spreadsheet.xlsx
+Opening Excel document: Spreadsheet.xlsx
+Microsoft Excel interface loaded...
+Loading 1 worksheet(s)...
+Printing Excel document: Spreadsheet.xlsx
+Content: Spreadsheet with 1 worksheet(s), formulas, and charts
+Status: Open
+Saving Excel document: Spreadsheet.xlsx
+Document saved in .xlsx format
+All 1 worksheet(s) saved
+Closing Excel document: Spreadsheet.xlsx
+Microsoft Excel interface closed
+
+Polymorphic behavior demonstrated successfully!
+All factories implement the same interface but create different document types.
+
+=== All Factory Method Tests Completed Successfully ===
+PS C:\Users\Ranjith\Desktop\CognizantHandson\Week-1\Design Patterns and Principles\FactoryMethodPatternExample>
